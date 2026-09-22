@@ -7,10 +7,11 @@
 </p>
 
 # W3 Hybrid : Ai Inteligent/Human .
-## W3_HB_team_BXCGICOG
+## W3_HB_team_BXCGICOG : W3HBT.
 ## WBCA
 
 W3 Building Cultivating Awareness
+โครงสร้างของคลังโค้ดนี้จะถูกใช้สำหรับงานศึกษา ส่วนตัวโดยมุ่งเน้นที่ความแตกต่าง สำหรับกิจกรรมเป้าหมาย.
 
 Build.
 Observe.
