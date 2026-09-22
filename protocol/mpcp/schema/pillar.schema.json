@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "required": ["name", "phase", "construction_order", "construction_trace", "semantic_layers", "operations"],
+  "properties": {
+    "name": { "type": "string" },
+    "phase": { "enum": ["construction", "operational"] },
+    "construction_order": {
+      "type": "array",
+      "const": ["A", "B", "C", "D", "E", "F"]
+    },
+    "construction_trace": {
+      "type": "array",
+      "items": { "enum": ["A", "B", "C", "D", "E", "F"] },
+      "uniqueItems": true
+    },
+    "semantic_layers": {
+      "type": "object",
+      "required": ["A", "B", "C", "D", "E", "F"],
+      "additionalProperties": false,
+      "properties": {
+        "A": {}, "B": {}, "C": {}, "D": {}, "E": {}, "F": {}
+      }
+    },
+    "operations": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "context": { "type": "object" }
+  }
+}

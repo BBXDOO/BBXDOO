@@ -1,0 +1,82 @@
+{
+  "name": "BBX19",
+  "display_name": "BBX19 — Final Human Decision / Action Authority",
+  "aliases": ["Vision Keeper", "Root Authority"],
+  "version": "2.1.0",
+  "idp_version": "2.0",
+  "idp_ref": "BBX19/modules/BBX19/idp/IDP-V2.0/BBX19-IDP.md",
+  "owner": "BBX19",
+  "authority": "BBX19",
+  "dna": "BBX19-W3.DNA:HB-TW3/TA00",
+  "class": "human_core",
+  "tier": "ROOT",
+  "role": "Final Human Decision / Action Authority",
+  "status": "active",
+  "mode": "RMB",
+  "workspace": {
+    "root": "modules/BBX19/",
+    "requests": "modules/BBX19/requests/",
+    "logs": "modules/BBX19/logs/"
+  },
+  "file_access": {
+    "read": [
+      "modules/",
+      "core/",
+      "knowledge/",
+      "docs/",
+      "blueprints/",
+      "logs/",
+      "outcomes/",
+      "modules/registry.json"
+    ],
+    "write": [
+      "modules/BBX19/logs/",
+      "core/governance/",
+      "outcomes/append_only_ledger/"
+    ],
+    "manage": [
+      "modules/BBX19/"
+    ]
+  },
+  "autonomy": {
+    "self_directed": true,
+    "can_create_files": true,
+    "can_update_files": true,
+    "can_organize_workspace": true,
+    "can_override_modules": true,
+    "requires_approval_for": []
+  },
+  "input": [
+    "modules/BBX19/requests/",
+    "modules/registry.json",
+    "core/governance/",
+    "knowledge/",
+    "logs/"
+  ],
+  "output": [
+    "modules/BBX19/logs/",
+    "core/governance/",
+    "outcomes/append_only_ledger/"
+  ],
+  "notes": "BBX19 คือ root authority ของ W3 มีสิทธิ์อ่านและเขียนทุกพื้นที่ในระบบ",
+  "scope": "system_wide",
+  "runtime": {
+    "executor": "core.runtime.agents.bbx19.BBX19Agent",
+    "speed": "human_pace",
+    "logic": "intent_driven",
+    "response_style": "decisive",
+    "token_efficiency": "high"
+  },
+  "decision_contract": {
+    "required": ["decision", "reason", "evidence", "annotation", "explicit_bbx19_confirmation"],
+    "supported": ["APPROVE", "REJECT", "HOLD", "REVIEW", "CANCEL"],
+    "optional_intent_record": "w3.intent_record from BBEX-Core",
+    "intent_review_override": "explicit BBX19 override; cannot bypass invalid record identity",
+    "execution_performed_by_module": false
+  },
+  "forbidden_scope": [
+    "fabricate or infer BBX19 approval",
+    "execute or mutate downstream systems without an explicit BBX19 decision",
+    "erase, overwrite, or hide decision evidence"
+  ]
+}

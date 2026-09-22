@@ -1,0 +1,16 @@
+# Keep jsonschema below 4.18 on Termux/Android to avoid pulling rpds-py,
+# which may try to build through Rust/maturin on aarch64-linux-android.
+jsonschema>=4.10.3,<4.18
+requests>=2.31.0
+PyGithub==2.1.1
+pytest>=8.0,<9
+
+# Optional: LLM API integration (required for core/adapters/llm_adapter.py)
+# Uncomment to enable:
+# openai>=1.0.0
+# google-generativeai>=0.8.0
+
+# W3-API cross gateway
+fastapi>=0.111,<1
+httpx>=0.27,<1
+uvicorn>=0.30,<1

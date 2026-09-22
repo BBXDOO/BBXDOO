@@ -1,0 +1,27 @@
+{
+  "schema_version": "W3-PATHS-0.3",
+  "status": "active",
+  "paths": {
+    "config_environment": "config/environment.json",
+    "config_ecosystem": "config/ecosystem.json",
+    "config_cross_system": "config/cross_system.json",
+    "module_registry": "modules/registry.json",
+    "module_loader_registry": "core/module-loader/module-registry.json",
+    "codex": "codex/",
+    "hospitication": "hospitication/",
+    "w3_api": "w3_api/",
+    "w3lgu": "protocol/w3lgu/",
+    "px": "protocol/w3lgu/px.py",
+    "w3db": "src/w3db/",
+    "w3db_append_flow": "src/w3db/append_flow.py",
+    "ep_signal": "protocol/EP_SIGNAL/",
+    "iget": "iget/",
+    "mpcp": "protocol/mpcp/",
+    "file_void_docs": "protocol/Files.void/",
+    "file_void_runtime": "protocol/files_void/",
+    "file_void_mpcp_adapter": "protocol/mpcp/adapter/file_void_tool.py",
+    "integration_guide": "docs/integration_guide.md",
+    "px_append_guide": "docs/px_w3db_append_flow.md",
+    "master_map": "docs/W3_MASTER_MAP.md"
+  }
+}

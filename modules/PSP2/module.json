@@ -1,0 +1,59 @@
+{
+  "name": "PSP2",
+  "display_name": "PSP2 — Pointer Stamp & Flow Router",
+  "version": "1.3.0-process-layer",
+  "owner": "PSP2",
+  "authority": "BBX19",
+  "class": "flow_stamp_router",
+  "tier": "L2",
+  "role": "Package / Stamp / Route",
+  "status": "active",
+  "scope": "pr_flow",
+  "identity": {
+    "stable_id": "PSP2",
+    "line_c_profile": "adaptive_runtime",
+    "legacy_owner_alias": "The_Singularity_Engine"
+  },
+  "workspace": {
+    "root": "modules/PSP2/",
+    "requests": "modules/PSP2/requests/",
+    "reports": "modules/PSP2/reports/",
+    "logs": "modules/PSP2/logs/",
+    "routes": "modules/PSP2/routes/"
+  },
+  "runtime": {
+    "mode": "adaptive",
+    "execution_style": "route_first",
+    "compatibility": [
+      "mpcp",
+      "w3lgu",
+      "iget"
+    ],
+    "agent_cli": {
+      "enabled": true,
+      "mode": "adaptive",
+      "log_level": "critical",
+      "auto_start": true
+    }
+  },
+  "properties": {
+    "stamp_protocol": "pointer_v2",
+    "handoff_trace": true,
+    "backward_compatible": true,
+    "process_layer_enabled": true,
+    "mutation_authority": false
+  },
+  "input": [
+    "modules/PSP2/requests/",
+    "modules/requests/",
+    "docs/",
+    "knowledge/",
+    "core/",
+    "config/"
+  ],
+  "output": [
+    "modules/PSP2/routes/",
+    "modules/PSP2/reports/",
+    "modules/PSP2/logs/"
+  ]
+}

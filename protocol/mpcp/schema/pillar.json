@@ -1,0 +1,20 @@
+{
+  "name": "mpcp_core_pillar",
+  "phase": "operational",
+  "construction_order": ["A", "B", "C", "D", "E", "F"],
+  "construction_trace": ["A", "B", "C", "D", "E", "F"],
+  "semantic_layers": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null,
+    "E": null,
+    "F": null
+  },
+  "operations": [],
+  "context": {
+    "owner": "protocol/mpcp",
+    "status": "active",
+    "law": "A-F are semantic layers, not execution order"
+  }
+}

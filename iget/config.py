@@ -1,0 +1,44 @@
+"""IGET v9.1 runtime, scoring, semantic, and proof configuration."""
+
+from __future__ import annotations
+
+VERSION = "9.1"
+COMMENT_MARKER = "<!-- iget:summary -->"
+DEFAULT_API_URL = "https://api.github.com"
+DEFAULT_TIMEOUT = 20.0
+MAX_INLINE_COMMENTS = 5
+
+CODE_EXT = (
+    ".py", ".js", ".ts", ".tsx", ".jsx", ".json", ".yml", ".yaml",
+    ".css", ".html", ".go", ".java", ".rb", ".php", ".c", ".cpp",
+    ".h", ".sh", ".rs", ".swift", ".kt",
+)
+DOC_EXT = (".md", ".txt", ".rst", ".adoc")
+CONFIG_EXT = (".yml", ".yaml", ".json", ".toml", ".ini", ".cfg", ".env", ".conf")
+RISK_WORDS = [
+    ".env", "secret", "token", "password", "credential", "private_key",
+    "apikey", "api_key", "auth_key", "access_key", "client_secret",
+]
+
+SCORE_GREEN = 85
+SCORE_YELLOW = 60
+FILES_WARN = 6
+FILES_LARGE = 15
+CHANGES_WARN = 400
+CHANGES_LARGE = 800
+GITHUB_PAGE_SIZE = 100
+
+# Semantic/proof contracts introduced on the base branch are preserved in v9.
+SEMANTIC_STATES = {
+    "safe": "ไม่พบสัญญาณความเสี่ยงสำคัญในขอบเขตที่ IGET ตรวจได้",
+    "caution": "PR มีจุดที่ควรตรวจสอบก่อน merge",
+    "critical": "PR มีความเสี่ยงสูง ต้องการ review เชิงลึก",
+    "unknown": "ไม่สามารถประเมิน semantic state ได้",
+}
+MPCP_ROLE = "governance_assistant"
+MPCP_VERSION = "1.0"
+MAX_FETCH_RETRY = 4
+CHECKPOINT_ENABLED = True
+ROLLBACK_ON_FAIL = True
+PROOF_TRACE_ENABLED = True
+PROOF_MAX_ENTRIES = 50

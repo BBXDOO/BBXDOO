@@ -1,0 +1,59 @@
+{
+  "name": "DTML",
+  "display_name": "DTML — Decision Trace & Transformation Matrix Layer",
+  "version": "1.3.0-process-layer",
+  "owner": "DTML",
+  "authority": "BBX19",
+  "class": "trace_transform_engine",
+  "tier": "L2",
+  "role": "Decision / Transformation / Traceability",
+  "status": "active",
+  "scope": "decision_trace",
+  "identity": {
+    "stable_id": "DTML",
+    "line_c_profile": "adaptive_runtime",
+    "legacy_owner_alias": "The_Singularity_Engine"
+  },
+  "workspace": {
+    "root": "modules/DTML/",
+    "requests": "modules/DTML/requests/",
+    "reports": "modules/DTML/reports/",
+    "logs": "modules/DTML/logs/",
+    "decisions": "modules/DTML/decisions/"
+  },
+  "runtime": {
+    "mode": "adaptive",
+    "execution_style": "trace_first",
+    "compatibility": [
+      "mpcp",
+      "w3lgu",
+      "iget"
+    ],
+    "agent_cli": {
+      "enabled": true,
+      "mode": "adaptive",
+      "log_level": "critical",
+      "auto_start": true
+    }
+  },
+  "properties": {
+    "logic_count": 27,
+    "matrix_dimensions": "3x3",
+    "backward_compatible": true,
+    "process_layer_enabled": true,
+    "mutation_authority": false
+  },
+  "input": [
+    "modules/DTML/requests/",
+    "modules/requests/",
+    "docs/",
+    "knowledge/",
+    "core/",
+    "config/"
+  ],
+  "output": [
+    "modules/DTML/decisions/",
+    "modules/DTML/reports/",
+    "modules/DTML/logs/"
+  ]
+}

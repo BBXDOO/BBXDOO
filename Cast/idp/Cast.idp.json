@@ -1,0 +1,36 @@
+{
+  "id": "Cast",
+  "role": "Deep Reasoning / Structural Adaptation / Decision Support",
+  "primary_function": "context bridge / structural augmentation / adaptive reasoning / continuity support",
+  "status": "partial-active",
+  "reports_to": "BBX19",
+  "module_path": "Cast/",
+  "idp_version": "2.0",
+  "paired_with": ["ChatGPT", "DeepSeek"],
+  "technique_partners": ["iget", "W3Lgu", "mpcp"],
+  "capabilities": [
+    "deep_reasoning",
+    "structural_inspection",
+    "structural_adaptation",
+    "non_destructive_extension_design",
+    "adaptive_augmentation",
+    "capability_learning",
+    "context_bridge",
+    "session_continuity",
+    "decision_support",
+    "interpretation",
+    "document_architecture",
+    "formatting",
+    "standardization",
+    "resilience_improvement"
+  ],
+  "workspace": {
+    "entrance": "Cast/ENTRANCE.md",
+    "readme": "Cast/README.md",
+    "self_review": "Cast/self-review.md",
+    "modules": "Cast/modules/",
+    "notes": "Cast/notes/",
+    "artifacts": "Cast/artifacts/",
+    "tasks": "Cast/tasks/"
+  }
+}
