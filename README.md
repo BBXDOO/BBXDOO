@@ -68,36 +68,6 @@ ___
 2️⃣ See Structure  
 3️⃣ Go to Active Branch
 
-## 📱 Progressive Web App (PWA)
-
-Repository นี้มี Progressive Web App ที่สามารถใช้งานผ่าน GitHub Pages
-
-**🌐 เข้าถึง PWA / Main Entry:**  
-[https://bbxdoo.github.io/W3_HB_team_BXCGICOG/](https://bbxdoo.github.io/W3_HB_team_BXCGICOG/)
-
-> **⚡ คำแนะนำฉบับเต็ม:** อ่าน [GITHUB_PAGES_SETUP.md](./docs/guides/GITHUB_PAGES_SETUP.md) สำหรับขั้นตอนโดยละเอียด
-
-### การตั้งค่า GitHub Pages (แบบย่อ)
-
-**วิธีที่ 1:** ใช้ main branch โดยตรง (แนะนำ)
-1. Settings → Pages
-2. Source: **Deploy from a branch**
-3. Branch: **`main`** / Folder: **`/docs`**
-4. Save → รอ 1-2 นาที
-
-**วิธีที่ 2:** หากยังไม่ merge PR ให้ merge PR ก่อน แล้วใช้การตั้งค่าเดียวกับวิธีที่ 1
-1. Merge PR นี้เข้า main
-2. Settings → Pages
-3. Branch: **`main`** / Folder: **`/docs`**
-
-### คุณสมบัติ PWA
-
-- ✅ ติดตั้งเป็นแอปบนมือถือและคอมพิวเตอร์
-- ✅ ทำงานแบบออฟไลน์ด้วย Service Worker
-- ✅ รองรับการแสดงผลแบบ Mobile-first responsive
-- ✅ Fast loading ด้วย Cache Strategy
-- ✅ Native app-like experience
-
 ---
 
 ## 📁 Docs Structure
